@@ -1,5 +1,14 @@
-%%{init: { 'prototype': {'__proto__': {'vuln': 'test'}}} }%%
-%%{init: { 'prototype': {'__proto__': {'vuln': 'test'}}} }%%
-sequenceDiagram
-Alice->>Bob: Hi Bob
-Bob->>Alice: Hi Alice
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+
+  <body>
+    <!-- #include file = "Web.config" -->
+    <script>alert('XSS')</script>
+  </body>
+
+</html>
